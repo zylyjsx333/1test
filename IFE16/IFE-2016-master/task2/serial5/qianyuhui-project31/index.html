@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    .content {
+        margin-top: 5%;
+        margin-left: 30%;
+    }
+    
+    .radio {
+        display: inline-block;
+        margin-left: 100px;
+    }
+    
+    .selectContent {
+        margin-top: 20px;
+    }
+    
+    .selectContent span {
+        margin-top: 10px;
+        width: 40px;
+    }
+    
+    .school {
+        display: inline-block;
+    }
+    
+    .outside {
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .select {
+        margin-left: 30px;
+        width: 160px;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+    .input {
+        margin-left: 30px;
+        width: 360px;
+        height: 20px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+    .hide{
+    	display: none;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <form>
+            <div class="radioCheck" onchange="radio()">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" checked> 在校生
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2"> 非在校生
+                    </label>
+                </div>
+            </div>
+            <div class="selectContent">
+                <div class="school">
+                    <span>学校</span>
+                    <select class="select" id="select1" onchange="select()">
+                        <option value="bj">北京</option>
+                        <option value="sh">上海</option>
+                        <option value="hz">杭州</option>
+                    </select>
+                    <select class="select" id="select2">
+                        <option value="bjdx1">北京大学1</option>
+                        <option value="bjdx2">北京大学2</option>
+                        <option value="bjdx3">北京大学3</option>
+                    </select>
+                </div>
+                <div class="outside hide">
+                    <span>就业单位</span>
+                    <input type="text" class="input">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function select(){
+			var e = document.querySelector("#select1");
+			var selected = e.options[e.selectedIndex].value;
+			var array = {
+			  ["bj"]: [
+			    "北京大学1", "北京大学2", "北京大学3"
+			  ],
+			  ["sh"]: [
+			    "上海大学1", "上海大学2", "	上海大学3"
+			  ],
+			  ["hz"]: [
+			    "杭州大学1", "杭州大学2", "杭州大学3"
+			  ]
+			};
+      //清空原有的
+      document.querySelector("#select2").innerText = '';
+
+			for (var i = 0; i< array[selected].length; i++){
+			    var opt = document.createElement('option');
+			    opt.value = array[selected][i];
+			    opt.innerHTML = array[selected][i];
+			    document.getElementById('select2').appendChild(opt);
+			}
+
+    }
+    function radio(){
+			if(document.getElementById('optionsRadios1').checked) {
+			   document.querySelector(".school").className = 'school';
+			   document.querySelector(".outside").className = 'outside hide';
+			}else if(document.getElementById('optionsRadios2').checked) {
+			   document.querySelector(".school").className = 'school hide';
+			   document.querySelector(".outside").className = 'outside';
+			}
+    }
+</script>
+</html>

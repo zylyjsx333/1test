@@ -1,0 +1,56 @@
+$hVal:150px; //最外层box高度
+$hSub:30px; //每缩小一层box缩小的高度
+$bdColor: #593c7f;
+%boxBorder {
+    border: 1px solid $bdColor;
+}
+
+%boxDisplay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+[class*='level-'] {
+    @extend %boxBorder;
+    background: #fff;
+    @extend %boxDisplay;
+}
+
+//设置每个box的宽度和高度
+@mixin box-hw {
+    @for $i from 1 through 4 {
+        .level-#{$i} {
+            height: ($hVal - $hSub*($i - 1));
+        }
+    }
+}
+
+.level-1 {
+    width: 740px;
+}
+
+.level-2 {
+    width: 340px;
+}
+
+.level-3 {
+    width: 140px;
+}
+
+.level-4 {
+    width: 40px;
+}
+
+@include box-hw;
+
+.box-container,
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.btn-container input{
+	margin-left:10px;
+	margin-right: 10px; 
+}

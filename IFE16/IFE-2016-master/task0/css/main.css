@@ -1,0 +1,327 @@
+body{
+    font-family: 'Microsoft YaHei',Arial, Helvetica, sans-serif;;
+}
+.fa-home,.fa-weibo,.fa-git,.fa-instagram{
+    color:white;
+}
+.middle {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.middle span {
+    color: #585858;
+    font-weight: 200;
+}
+
+.middle b {
+    color: #000000;
+    font-weight: 600;
+}
+
+.team-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.team-wrapper p {
+    margin-top: 20px;
+}
+
+.team-wrapper .center {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.team-wrapper .view {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 100%;
+    margin-left: -50px;
+    max-width: 591px;
+    max-height: 446px;
+    position: relative;
+}
+
+.team-wrapper.right {
+    border: 1px solid #DCDCDC;
+}
+
+.team-wrapper.right .view {
+    float: right;
+    margin: 0px 0 0 1px;
+    margin-right: -50px;
+    padding-bottom: 1px;
+}
+
+.team-wrapper .view img {
+    border-radius: 250px;
+	overflow: hidden;
+    margin: 0 auto !important;
+    top: 0 !important;
+}
+
+
+.team-wrapper .view.wang {
+    background-position:0 -447px;
+}
+
+.team-wrapper .view.wang img {
+    left: -29px;
+    top: -20px;
+}
+
+.team-wrapper.last {
+    -webkit-box-shadow: 0 -2px 1px rgba(0,0,0,0.08) inset;
+    -moz-box-shadow: 0 -2px 1px rgba(0,0,0,0.08) inset;
+    box-shadow: 0 -2px 1px rgba(0,0,0,0.08) inset;
+    padding-bottom: 1px;
+}
+
+.team-wrapper .view.zhou {
+    background-position: 0 -896px;
+}
+
+.team-wrapper .view.zhou img {
+    left: -10px;
+    top: -8px;
+}
+
+.team-wrapper .view.li {
+    background-position: 0 -1344px;
+}
+
+.team-wrapper .view.li img {
+    left: -6px;
+    top: 1px;
+}
+
+.team-wrapper h3 {
+	margin-top: 30px;
+	padding-top: 60px;
+    color: #3f4c79;
+	font-size: 36px;
+    font-weight: bold;
+}
+
+.team-wrapper a {
+    color: #3f4c79;
+}
+
+.team-wrapper h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #a8a1a5;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.team-wrapper p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.team-wrapper.divider {
+    margin-top: 0px !important;
+    padding-top: 0px;
+}
+
+.team-wrapper a.twitter, .team-wrapper a.ownweb, .team-wrapper a.linkedin, .team-wrapper a.github {
+    background: #3f4c79;
+	background-position: 0 0;
+	background-size: 41px auto;
+	z-index: 99999;
+	position: absolute;
+	display: block;
+	width: 41px;
+    border-radius: 20px;
+	height: 41px;
+    transition: all 0.2s 0s;
+}
+.team-wrapper a.twitter:hover,.team-wrapper a.ownweb:hover,.team-wrapper a.github:hover,.team-wrapper a.linkedin:hover{
+    transform: scale(1.2);
+}
+.team-wrapper a.twitter:hover {
+    background: #da3114;
+}
+
+.team-wrapper a.ownweb:hover {
+    background: #dfc056;
+}
+
+.team-wrapper a.github:hover {
+    background: #138648;
+}
+
+.team-wrapper a.linkedin:hover {
+    background: #00BFFF;
+}
+
+#timeline {
+	width: 100%;
+    height: auto;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(15, 32, 88, 0.8);
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer .teamLogo img {
+    width: 100px;
+    margin: 0 auto;    
+}
+
+.backTop img {
+    width: 90px;
+    padding: 20px;
+    transition: all 0.3s 0s;
+    position: relative;
+    left:98%;
+    bottom: -40px;
+    opacity: 0.8;
+}
+    
+.moreInfo, .backTop {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 978px) {
+    .team-wrapper a.twitter, .team-wrapper a.ownweb, .team-wrapper a.linkedin, .team-wrapper a.github {
+	    display: none;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .team-wrapper {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+	.team-wrapper {
+    	width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .team-wrapper p {
+        text-align: left;
+        padding: 0 60px 30px 60px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+	.team-wrapper p {
+	    text-align: left;
+	    padding: 0 20px 30px 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+	.team-wrapper img {
+	    width: 100%;
+        height: auto;
+    }
+    
+    .team-wrapper .view.zhou img {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .team-wrapper .view {
+        float: none !important;
+        margin: 40px auto 0 !important;
+    }
+    .team_bio .view img {
+        margin: 0 auto !important;
+        top: 0 !important;
+    }
+    .backTop img {
+        left: 80%;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .team-wrapper .view.wang img {
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .team-wrapper .view.wang {
+        background-position: 0 -243px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .team-wrapper .view.zhou {
+        background-position: 0 -485px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .team-wrapper .view.li {
+        background-position: 0 -727px;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+	.team-wrapper h3 {
+	    margin-top: 40px;
+	    padding-top: 30px;
+        text-align: center;
+	    box-shadow: 0 2px 4px -2px rgba(0,0,0,0.1) inset, 0 2px 4px -2px rgba(0,0,0,0.1) inset;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+	.team-wrapper h4 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .team-wrapper h3 {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .team-wrapper.right {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .team-wrapper.right .view {
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .team-wrapper.divider {
+        padding-top: 0px;
+    }
+}

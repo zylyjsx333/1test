@@ -1,0 +1,36 @@
+*{
+    font-family: "微软雅黑";
+}
+body{
+    min-width: 500px;
+}
+input{
+    height: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+button{
+    height: 25px;
+    background: #fff;
+    outline: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    border: 1px solid #42ACF4;
+    background: #42ACF4;
+    transition: .5s;
+}
+.item{
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    padding: 0px 5px;
+    height: 45px;
+    margin: 10px 8px 0px 0px;
+    background: red;
+}
+#queue{
+    float: left;
+}

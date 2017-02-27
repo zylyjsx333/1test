@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+		<button class="toggle">展示/隐藏</button>
+    <div class="modal hide" id="modal">
+    		<div class="overlay-mask" id="overlay-mask"></div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">这是一个浮动层</h4>
+                </div>
+                <div class="modal-body">
+                    <p>这是一个浮出层</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modal-func" data-dismiss="modal">确定</button>
+                    <button type="button" class="btn btn-default modal-cancel">取消</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+</body>
+<script src="modal.js"></script>
+</html>

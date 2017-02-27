@@ -1,0 +1,88 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body *{
+    transition: all 0.4s;
+}
+
+.prompt{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.prompt-window{
+    margin: 40% 30%;
+    width: 40%;
+    height: 20%;
+    background: #eeeeee;
+    border-radius: 20px;
+    overflow: hidden;
+    position: fixed;
+}
+
+.prompt-header{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.prompt-cancel, .prompt-yes{
+    position: absolute;
+    top: 15px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    cursor: pointer;
+    color: #079243;
+}
+
+.prompt-cancel:hover, .prompt-yes:hover{
+    color: #39c878;
+}
+
+.prompt-cancel{
+    left: 20px;
+}
+
+.prompt-yes{
+    right: 20px;
+}
+
+.prompt-title{
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: "微软雅黑";
+}
+
+.prompt-body{
+    background: #cccccc;
+    height: 100%;
+}
+
+.prompt-body p{
+    font-size: 30px;
+    margin: 0 auto;
+    color: #666666;
+    padding: 20px 25%;
+}
+
+#show-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#prompt-show {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    margin: 50px;
+    font-size: 40px;
+}

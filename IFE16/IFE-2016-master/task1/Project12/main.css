@@ -1,0 +1,108 @@
+body, table, tr, th, td, input, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+}
+
+#container {
+    font-weight: bold;
+}
+
+#container tr:nth-child(2n+1){
+    background-color: #CCCCCC;
+}
+
+#container th {
+    background: black;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#container .table-special {
+    color: red;
+}
+
+#mutable-input {
+    margin: 50px 0;
+    width: 100px;
+    transition: 0.5s width;
+    outline: none;
+}
+
+#mutable-input:focus {
+    width: 200px;
+    border: 2px solid blue;
+}
+
+#banner-container{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner-content {
+    width: 300%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    transition: 0.5s left;
+    word-spacing: 0;
+    letter-spacing: 0;
+    font-size: 0;
+}
+
+#banner-content li {
+    display: inline-block;
+    list-style: none;
+    width: 300px;
+    height: 100px;
+}
+
+#banner-content li:nth-child(1){
+    background-color: green;
+}
+
+#banner-content li:nth-child(2){
+    background-color: blue;
+}
+
+#banner-content li:nth-child(3){
+    background-color: red;
+}
+
+#banner-controller{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#banner-controller a{
+    text-decoration: none;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    background-color: #fff;
+    opacity: 0.5;
+    text-align: center;
+    color: #cccccc;
+}
+#banner-controller a:visited{
+    color: #cccccc;
+}
+
+#img1:target~#banner-content{
+    left: 0;
+}
+
+#img2:target~#banner-content{
+    left: -100%;
+}
+
+#img3:target~#banner-content{
+    left: -200%;
+}

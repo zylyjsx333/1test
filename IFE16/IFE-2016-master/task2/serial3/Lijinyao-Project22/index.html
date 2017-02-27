@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript and Tree</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #root{
+            display: flex;
+            flex-flow: row wrap;
+            flex-direction: row;
+            /*定义空余空间的分配*/
+            justify-content: space-around;
+            align-items: stretch;
+            height: 400px;
+        }
+        #root > .child{
+            border: 1px solid black;
+        }
+
+        .child{
+            display: flex;
+            flex-grow: 1;
+            border: 1px solid red;
+            margin: 10px;
+            width: auto;
+            background-color: #fff;
+        }
+        #focus{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button id="preorderTraversal">先序遍历</button>
+    <button id="inorderTraversal">中序遍历</button>
+    <button id="postorderTraversal">后序遍历</button>
+    <div id="root">
+    </div>
+
+<script src="tree.js"></script>
+</body>
+</html>

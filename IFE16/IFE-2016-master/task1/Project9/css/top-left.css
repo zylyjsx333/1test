@@ -1,0 +1,172 @@
+header,.side-part,.breadcrumb{
+	font-family: '黑体';
+	vertical-align: top;
+}
+/*start header*/
+header{
+	min-width: 1266px;
+	background: #2189bf;
+	width: 100%;
+	height: 56px;
+	position: relative;
+}
+.logo,.search,.login{
+	position: absolute;
+	display: inline-block;
+	
+}
+.logo{
+	top: 10px;
+	left:50px;
+}
+.logo img{
+	display: block;	
+}
+.search{
+	right: 156px;
+	top: 14px;
+
+}
+.search .icon-search{
+	position: absolute;
+	top:6px;
+	left: 12px;
+}
+.search input{
+	border: none;
+	height: 28px;
+	width: 250px;
+	border-radius: 28px;
+	padding-left: 40px;
+	transition: width 0.5s 0s;
+}
+.search input:focus{
+	outline: none;
+	width: 350px;
+}
+.login{
+	right: 80px;
+	top: 18px;
+}
+.login:hover{
+	cursor: pointer;
+}
+.login div{
+	display: inline-block;
+	vertical-align: middle;	
+}
+.login p{
+	color: #fff;
+	font-size: 14px;
+} 
+.login .icon-login img{
+	display: block;
+}
+/*end header*/
+
+/*start side-part*/
+.side-part{
+	width: 260px;
+	background: #2a2e3d;
+	height: 1224px;
+	color:#67778b;
+	font-size: 14px;
+
+	display: inline-block;
+}
+.user-info{
+	width: 140px;
+	margin:0 auto;
+	height: 160px;
+}
+.user{
+	padding-top: 20px;
+	margin:0 auto;
+	width: 100%;
+}
+
+.user img ,.user p{
+	display: inline-block;
+	vertical-align: middle;
+}
+.user p{
+	margin-left: 20px;
+	color: #fff;
+	font-size: 18px;
+}
+.user-collect,.user-fans{
+	display: inline-block;
+	text-align: center;
+	margin-top: 24px;
+	line-height: 18px;
+}
+.collect-fans{
+	padding:0 15px;
+}
+.split-line{
+	display: inline-block;
+	height: 24px;
+	width: 1px;
+	background: #67778b;
+	margin: 0 18px;
+}
+.unfold-item{
+	background: #383d4e;
+}
+
+.menu-item{
+	padding-left: 45px;
+	height: 40px;
+	line-height: 40px;
+
+	transition: color 0.2s;
+}
+.menu-item:hover{
+	background: #383d4e;
+	color: #fff;
+}
+.menu-item img,.menu-item p{
+	display: inline-block;
+}
+.unfold-content{
+	padding-left: 70px;
+}
+.file p{
+	display: inline-block;
+}
+.document-1 p{
+	display: inline-block;
+}
+.file,.document-1{
+	height: 30px;
+	transition: color 0.2s;
+}
+.document-1{
+	padding-left: 38px;
+}
+.file:hover,.document-1:hover{
+	color: #fff;
+}
+/*end side-part*/
+/*start breadcrumb*/
+.content-container{
+	display: inline-block;
+	margin-left: -8px;
+	width: -webkit-calc(100% - 260px);
+}
+.breadcrumb{
+	display: inline-block;
+	padding: 10px 20px;
+	width: 100%;
+	background: #fff;
+}
+.breadcrumb p{
+	font-size: 14px;
+	color: #b0b0b0;
+	display: inline-block;
+}
+.breadcrumb p:hover{
+	color: #2189bf;
+	cursor: pointer;
+}
+/*end breadcrumb*/

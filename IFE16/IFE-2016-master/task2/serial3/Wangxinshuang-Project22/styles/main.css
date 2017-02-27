@@ -1,0 +1,46 @@
+[class*='level-'] {
+  border: 1px solid #593c7f; }
+
+[class*='level-'] {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+[class*='level-'] {
+  background: #fff; }
+
+.level-1 {
+  width: 740px; }
+
+.level-2 {
+  width: 340px; }
+
+.level-3 {
+  width: 140px; }
+
+.level-4 {
+  width: 40px; }
+
+.level-1 {
+  height: 150px; }
+
+.level-2 {
+  height: 120px; }
+
+.level-3 {
+  height: 90px; }
+
+.level-4 {
+  height: 60px; }
+
+.box-container,
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+
+.btn-container input {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/*# sourceMappingURL=main.css.map */

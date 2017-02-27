@@ -1,0 +1,139 @@
+<!doctype html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>表单验证</title> 
+    <style>
+	      input{
+			    width: 200px;
+			    height: 16px;
+			    padding: 6px 12px;
+			    font-size: 14px;
+			    line-height: 1.42857143;
+			    color: #555;
+			    background-color: #fff;
+			    background-image: none;
+			    border: 1px solid #ccc;
+			    border-radius: 4px;
+			    outline: none;
+			    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	      }
+	      .btn{
+			    display: inline-block;
+			    padding: 6px 12px;
+			    margin-bottom: 0;
+			    font-size: 14px;
+			    font-weight: 400;
+			    line-height: 1.42857143;
+			    text-align: center;
+			    white-space: nowrap;
+			    vertical-align: middle;
+			    -ms-touch-action: manipulation;
+			    touch-action: manipulation;
+			    cursor: pointer;
+			    -webkit-user-select: none;
+			    -moz-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			    background-image: none;
+			    border: 1px solid transparent;
+			    border-radius: 4px;
+	      }
+	      .btn-primary{
+			    color: #fff;
+			    background-color: #337ab7;
+			    border-color: #2e6da4;
+	      }
+	      .validate_message{
+	      	font-size: 16px;
+	      	color: #B4B4B4;
+	      }
+	      .bsuccess{
+					border-color: #5cb85c!important;
+	      }
+	      .bdanger{
+				  border-color: #d9534f!important;
+	      }
+	      .success{
+			    color: #5cb85c!important;
+	      }
+	      .danger{
+	      	color: #d9534f!important;
+	      }
+    </style>
+</head>
+<body>
+	<body>
+		<form action="">
+			<div class="form">
+					名称: <input type="text" size="16" class="validate1"> <div id="verify1" class="btn btn-primary">验证</div>
+
+					<p id="validate_message1" class="validate_message"></p>
+			</div>
+
+			<div class="form">
+				
+					名称: <input type="text" size="16" class="validate2"> <div id="verify2" class=" btn btn-primary">验证</div>
+
+					<p id="validate_message2" class="validate_message"></p>
+			</div>
+
+			<div class="form">
+				
+					名称: <input type="text" size="16" class="validate3"> <div id="verify3" class=" btn btn-primary">验证</div>
+
+					<p id="validate_message3" class="validate_message"></p>
+			</div>
+		</form>
+
+
+</body>
+<script>
+
+
+		var el = document.getElementById("verify1");
+		el.addEventListener('click',function(){validate('validate1','validate_message1');},false);
+
+		var el2 = document.getElementById("verify2");
+		el2.addEventListener('click',function(){validate('validate2','validate_message2');},false);
+
+		var el3 = document.getElementById("verify3");
+		el3.addEventListener('click',function(){validate('validate3','validate_message3');},false);
+
+		function validate(targetvalidated,targetmessage){
+			 var validated = document.querySelector("."+targetvalidated).value;
+			 var len = 0;
+			 var message = '名称格式正确';
+			 var style = 'success';
+			 var bstyle = 'bsuccess';
+			 for (var i = validated.length - 1; i >= 0; i--) {
+			 		//汉字长度为2
+				 	if(/^[\u4e00-\u9fa5]+$/.test(validated[i])){
+						len = len +2;
+					}else{
+						len++;
+					}
+			 	
+			 }
+
+			 if(len < 4 || len >16){
+			     message = "必填，长度为4~16个字符";
+			     style = 'validate_message';
+			     bstyle = '';
+			 }
+
+			 if(len == 0){
+			     message = "姓名不能为空";
+			     style = "danger";
+			     bstyle = 'bdanger';
+			 }
+
+			// 对提醒消息样式进行更改
+			 document.querySelector("#"+targetmessage).innerText = message;
+			 document.querySelector("#"+targetmessage).className = style;
+
+			 //对输入框样式进行修改
+			 document.querySelector("."+targetvalidated).className = bstyle;
+		}
+</script>
+</html>

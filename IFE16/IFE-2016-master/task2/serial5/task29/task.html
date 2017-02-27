@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IFE JavaScript Task 01</title>
+        <script src="task.js"></script>
+    
+        <style>
+            body {
+                font-size: 25px;
+                font-family: 'Microsoft yahei';
+            }
+            
+            input {
+                border: 2px solid #a8a8a8;
+                font-size: 25px;
+                border-radius: 5px;
+                outline: none;
+            }
+            
+            #form-container {
+                width: 500px;
+                margin: auto;
+                padding: 100px;
+            }
+            
+            #form-container span {
+                width: auto;
+                height: 50px;
+                padding-right: 10px;
+            }
+            
+            #form-container input {
+                width: 350px;
+                height: 50px;
+            }
+            
+            #form-container button {
+                display: inline-block;
+                width: 80px;
+                height: 50px;
+                float: right;
+                line-height: 50px;
+                border-radius: 5px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: bold;
+                color: #fff;
+                background: #2f79ba;
+            }
+            
+            #form-container p {
+                margin: 0 55px;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <div id="form-container">
+            <label><span>名称</span><input type="text" id="form-input"></label>
+            <button id="form-post">验证</button>
+            <p id="status"></p>
+        </div>
+    </body>
+</html>    

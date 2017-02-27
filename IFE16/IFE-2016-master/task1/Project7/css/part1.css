@@ -1,0 +1,186 @@
+#part1{
+    min-width: 1280px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+}
+/*-------------------------------------------------
+header
+-------------------------------------------------*/
+.header{
+    height: 58px;
+    margin: 0 auto;
+}
+
+.header *{
+    display: inline-block;
+}
+
+#header-icon{
+    padding-left: 50px;
+    vertical-align: middle;
+    height: 31px;
+    width: 31px;
+}
+
+#new-word{
+    font-family: "黑体", sans-serif;
+    margin-left: 5px;
+    line-height: 58px;
+    height: 58px;
+    font-size: 20px;
+}
+
+.nav{
+    float: right;
+    padding-right: 45px;
+}
+
+.nav a{
+    text-decoration: none;
+    line-height: 54px;
+    padding:0 19px;
+    color: #787b83;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid rgba(0,0,0,0);
+}
+
+.nav:hover>a{
+    color: #787b83;
+    border-bottom: 4px solid rgba(0,0,0,0); 
+}
+
+.nav>a:hover{
+    color: #e74f4d;
+    border-bottom: 4px solid #e74f4d;
+}
+
+.nav .focused{
+    color: #e74f4d;
+    border-bottom: 4px solid #e74f4d;
+}
+#login{
+    color: #e74f4d;
+}
+
+#login:before{
+    background-image: url(../img/login.png);
+    display: inline-block;
+    background-size: 17px 17px;
+    width: 17px;
+    height: 17px;
+    vertical-align: text-bottom;
+    content: "";
+
+}
+/*-------------------------------------------------
+part1
+-------------------------------------------------*/
+#part1 {
+    width: 100%;
+}
+
+.content{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#time-of-new-life{
+    height: 690px;
+    background-image: url("../img/part1-background.png");
+    background-position: 0% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    min-width: 1280px;
+}
+
+#time-of-new-life .background-filter{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1,3,0,0.2);
+}
+
+#time-of-new-life .content{
+    position: relative;
+    padding-top: 230px;
+    height: 270px;
+    color: #ffffff;
+    width: 1020px;
+}
+
+#time-of-new-life h1{
+    font-size: 3.8em;
+    margin: 0;
+    font-weight: 400;
+}
+
+#time-of-new-life p{
+    padding-top: 20px;
+    line-height: 1.5;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+#time-of-new-life a{
+    margin-top: 60px;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 8px;
+    line-height: 65px;
+    background-color: #e74f4d;
+    height:  65px;
+    width: 331px
+}
+
+#intro .content{
+    width: 1280px;
+    margin: 0 auto;
+    letter-spacing: -10px;
+    
+}
+#intro .content div{
+    letter-spacing: 0;
+    display: inline-block;
+    text-align: center;
+    min-width: 319px;
+    width: 25%;
+    color: #787b83;
+    padding: 45px 0 60px 0;
+}
+
+#intro .content div:nth-last-child(n+2) p{
+    border-right: 1px solid #999695;
+}
+
+#intro .content img{
+    padding-bottom: 45px;
+}
+
+#intro .content p{
+    font-family: "黑体","Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 0.9em;
+    line-height: 1.3;
+    padding-bottom: 20px;
+}
+#whats-more {
+    background-color: #ededec;
+}
+#whats-more .content{
+    margin: 0 auto;
+    min-width: 1280px;
+    text-align: center;
+    padding: 72px 0;
+}
+
+#whats-more .content h1{
+    color: #867e7a;
+    font-size: 3.2em;
+    font-weight: 400;
+}
